@@ -4,16 +4,12 @@ function changeColor(){
     let oldColor = document.getElementById("machine").style.color;
     let newColor = (colors[rand]);
     if (oldColor != newColor) {
-        document.getElementById("machine").style.color = newColor;
-        console.log("Цвет заменён!");
+        document.getElementById("Ptext").style.color = newColor;
     } else changeColor();
 }
-function generateColor(){
-    
-}
 function mouseOn(){
-    document.title = "Заменённый текст";
+    document.getElementById("H1header").innerHTML= "Changed Header";
 }
 function mouseOut(){
-    document.title = "Стандартный заголовок";
+    document.getElementById("H1header").innerHTML= "Normal Header";
 }

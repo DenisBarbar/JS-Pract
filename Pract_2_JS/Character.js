@@ -10,47 +10,55 @@ class Character {
 	}
 
 	accurateShot(target) {
-		const cost = 3;
-		const damage = 20;
-		if (this.mana >= cost){
-			this.mana = this.mana - cost;
-			target.health = target.health - damage;
-			if (target.health < 0) target.health = 0;
-			console.log(`${this.chName} attacs ${target.chName} with Accurate Shot and deals ${damage} damage`);
-			logging();
-		} else console.log(`Not enougth mana!`);
+		if (this.skills.indexOf('accurateShot') != -1){
+			const cost = 3;
+			const damage = 20;
+			if (this.mana >= cost){
+				this.mana = this.mana - cost;
+				target.health = target.health - damage;
+				if (target.health < 0) target.health = 0;
+				console.log(`${this.chName} attacs ${target.chName} with Accurate Shot and deals ${damage} damage`);
+				logging();
+			} else console.log(`Not enougth mana!`);
+		} else console.log(`Cant cast it!`);
 	}
 	silverArrow(target) {
-		const cost = 6;
-		const damage = 45;
-		if (this.mana >= cost) {
-			this.mana = this.mana - cost;
-			target.health = target.health - damage;
-			if (target.health < 0) target.health = 0;
-			console.log(`${this.chName} attacs ${target.chName} with Silver Arrow and deals ${damage} damage`);
-			logging();
-		} else console.log(`Not enought Mana!`);
+		if (this.skills.indexOf('silverArrow') != -1){
+			const cost = 6;
+			const damage = 45;
+			if (this.mana >= cost) {
+				this.mana = this.mana - cost;
+				target.health = target.health - damage;
+				if (target.health < 0) target.health = 0;
+				console.log(`${this.chName} attacs ${target.chName} with Silver Arrow and deals ${damage} damage`);
+				logging();
+			} else console.log(`Not enought Mana!`);
+		} else console.log(`Cant cast it!`);
 	}
 	dragonBreath(target) {
-		const cost = 10;
-		const damage = 70;
-		if (this.mana >= cost){
-			this.mana = this.mana - cost;
-			target.health = target.health - damage;
-			if (target.health < 0) target.health = 0;
-			console.log(`${this.chName} attacs ${target.chName} with Dragon Breath and deals ${damage} damage`);
-			logging();
-		} else console.log(`Not enougth mana!`);
+		if (this.skills.indexOf('dragonBreath') != -1){
+			const cost = 10;
+			const damage = 70;
+			if (this.mana >= cost){
+				this.mana = this.mana - cost;
+				target.health = target.health - damage;
+				if (target.health < 0) target.health = 0;
+				console.log(`${this.chName} attacs ${target.chName} with Dragon Breath and deals ${damage} damage`);
+				logging();
+			} else console.log(`Not enougth mana!`);
+		} else console.log(`Cant cast it!`);
 	}
 	claws(target) {
-		const cost = 5;
-		const damage = 40;
-		if (this.mana >= cost){
-			this.mana = this.mana - cost;
-			target.health = target.health - damage;
-			if (target.health < 0) target.health = 0;
-			console.log(`${this.chName} attacs ${target.chName} with Claws and deals ${damage} damage`);
-			logging();
-		} else console.log(`Not enougth mana!`);
+		if (this.skills.indexOf('dragonBreath') != -1){
+			const cost = 5;
+			const damage = 40;
+			if (this.mana >= cost){
+				this.mana = this.mana - cost;
+				target.health = target.health - damage;
+				if (target.health < 0) target.health = 0;
+				console.log(`${this.chName} attacs ${target.chName} with Claws and deals ${damage} damage`);
+				logging();
+			} else console.log(`Not enougth mana!`);
+		} else console.log(`Cant cast it!`);
 	}
 }

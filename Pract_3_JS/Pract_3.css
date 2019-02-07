@@ -4,9 +4,12 @@
         background-image:url("machine.jpg");
         background-repeat:no-repeat;
          
-        /*оформление текста*/
         color:#000;
+        font-weight: bold;
         text-align: center;
         font-family:Arial, Helvetica, sans-serif;
+        cursor: pointer;
+    }
+    H1 {
         font-size:100px; 
     }

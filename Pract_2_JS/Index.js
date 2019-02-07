@@ -12,6 +12,7 @@ console.log(Comp);
 console.log("Battle Begins");
 Player.accurateShot(Comp);
 Comp.claws(Player);
+Player.claws(Comp);
 Player.silverArrow(Comp);
 Comp.claws(Player);
 Player.accurateShot(Comp);
